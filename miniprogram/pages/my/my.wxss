@@ -1,0 +1,54 @@
+/* pages/my/my.wxss */
+.bubble2-group-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50rpx;
+    padding: 30rpx;
+}
+
+.function2-bubble {
+    width: 250rpx;
+    height: 300rpx;
+    background: #f0e47696;
+    border-radius: 30rpx;
+    box-shadow: 0rpx 0rpx 30rpx rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30rpx;
+    margin-top: 50rpx;
+}
+
+.icon {
+    width: 120rpx;
+    height: 120rpx;
+    margin: 30rpx;
+}
+
+.data-text {
+    text-align: right;
+}
+
+.data-title {
+    font-size: 30rpx;
+    color: #7f7f7f;
+}
+
+.data-value {
+    font-size: 35rpx;
+    font-weight: bold;
+    color: #7f7f7f;
+}
+
+/* 新增：为picker的显示文本添加样式 */
+.picker-text {
+    width: 200rpx;
+    height: 70rpx;
+    background: #76f0bdea;
+    border-radius: 30rpx;
+    /* 让文本在picker区域内居中 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

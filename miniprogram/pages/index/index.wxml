@@ -1,0 +1,50 @@
+<view class="container">
+
+<!--第一个气泡：标题气泡-->
+<view class="title_bubble">
+  <view class="bubble_text">
+    <text class="text1">天天学习，好好向上</text>
+    <text class="text2">不努力就会成为女人的玩物</text>
+  </view>
+  <image class="bubble-icon" src="/image/帆船.png"></image>
+</view>
+
+ <!--后四个气泡的容器-->
+  <view class="bubble-group-container">
+      <!--温度气泡-->
+    <view class="function-bubble">
+      <image class="icon" src="/image/Temp.png" />
+      <view class="data-text">
+        <view class="data-title">环境温度</view>
+        <view class="data-value">{{W}}℃</view>
+      </view>
+    </view>
+
+      <!--湿度气泡-->
+    <view class="function-bubble">
+      <image class="icon" src="/image/Hum.png" />
+      <view class="data-text">
+        <view class="data-title">环境湿度</view>
+        <view class="data-value">{{S}}%</view>
+      </view>
+    </view>  
+       <!--光强气泡-->
+    <view class="function-bubble">
+      <image class="icon" src="/image/icons8-太阳-64.png" />
+      <view class="data-text">
+        <view class="data-title">环境光强</view>
+        <view class="data-value">{{G}}%</view>
+      </view>
+    </view>
+
+ <!--风扇气泡-->
+ <!-- <view class="function-bubble">
+      <image class="icon" src="/image/icons8-风扇转速-50.png" />
+      <view class="data-text">
+        <view class="data-title">风扇挡位</view>
+        <view class="data-value">{{fanSpeedText}}档</view>
+      </view>
+    </view> -->
+
+  </view>
+</view>

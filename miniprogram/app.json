@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor":"#ffffff",
+    "navigationBarTitleText":"温湿度采集系统",
+    "enablePullDownRefresh": true,  
+    "backgroundColor": "#00FFFF",    
+    "backgroundTextStyle": "dark" 
+  },
+
+
+  "tabBar": {
+    "selectedColor": "#b4282d",
+    "position": "bottom",
+    "list": [
+        {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "image/home.png",
+            "selectedIconPath": "image/home_select.png"
+        },
+        {
+            "pagePath": "pages/my/my",
+            "text": "我的",
+            "iconPath": "image/my.png",
+            "selectedIconPath": "image/my_select.png"
+        }
+    ]
+},
+  "style": "v2"
+}

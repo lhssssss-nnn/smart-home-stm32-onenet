@@ -1,0 +1,35 @@
+<!--pages/my/my.wxml-->
+  
+     <!--后四个气泡的容器-->
+  <view class="bubble2-group-container">
+     <!--报警气泡-->
+  <view class="function2-bubble">
+      <image class="icon" src="/image/alarm.png" />
+      <view class="data-text">
+        <view class="data-title">报警器</view>
+      </view>
+      <switch class="toggle-switch" bindchange="Onenet_SetAlarmInfo"/>
+    </view>
+
+       <!--LED灯气泡-->
+    <view class="function2-bubble">
+      <image class="icon" src="/image/LED.png" />
+      <view class="data-text">
+        <view class="data-title">LED灯</view>
+      </view>
+      <switch class="toggle-switch" bindchange="Onenet_SetLedInfo"/>
+    </view>   
+     <!-- 新增：风扇控制气泡 -->
+     <view class="function2-bubble">
+        <image class="icon" src="/image/icons8-风扇转速-50.png" /> <!-- 请确保你有一张 fan.png 图片 -->
+        <view class="data-text">
+           <!-- <view class="data-title">风扇</view> -->
+            <!-- 显示当前选中的档位 -->
+            <view class="data-value">风扇{{fanSpeedText}}</view>
+        </view>
+        <!-- 使用 picker 组件，bindchange 绑定到新的处理函数 -->
+        <picker mode="selector" range="{{fanSpeedOptions}}" bindchange="Onenet_SetFanInfo">
+            <view class="picker-text">选择档位</view>
+        </picker>
+    </view>
+  </view>

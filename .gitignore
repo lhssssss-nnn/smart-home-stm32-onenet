@@ -1,0 +1,33 @@
+# Private configuration
+**/app_config.local.h
+**/config.local.js
+**/project.private.config.json
+.env
+.env.*
+!.env.example
+
+# Keil generated files and personal settings
+firmware/MDK-ARM/wulianwang/
+**/DebugConfig/
+*.uvguix*
+*.uvoptx
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.map
+*.lst
+*.lnp
+*.dep
+*.iex
+*.sct
+*.build_log.htm
+*.htm
+
+# Local tools / validation output
+.local/
+__pycache__/
+node_modules/
+.DS_Store
+Thumbs.db
